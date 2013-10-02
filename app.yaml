@@ -1,0 +1,11 @@
+application: evanzastreamer
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /player
+  static_dir: player
+
+- url: /.*
+  script: main.py

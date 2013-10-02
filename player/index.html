@@ -1,0 +1,41 @@
+		<head>
+		
+		</head>
+		<body>
+			<!-- Copy from here -->
+			<a  
+				 href="#"
+				 style="display:block;width:540px;height:432px"  
+				 id="evplayer"> 
+			</a> 
+		
+			<script type="text/javascript" src="http://c1.cloud.evanza.com/player/flowplayer-3.2.6.min.js"></script>
+			<script type="text/javascript">
+						flowplayer("evplayer", {src: "http://c1.cloud.evanza.com/player/evplayer.swf", wmode: "opaque"}, {
+							
+							clip: {
+									provider : 'rtmp',
+									url: 'mpegts.stream',
+									live: true,
+									autoPlay: false,
+									scaling: "fit",
+									eventCategory: 'Evanza Stream',
+									bufferLength: 3
+									
+								} ,		 
+							
+							canvas: {
+								} ,
+							screen: {
+									
+								} ,	
+							play: {
+									
+								},
+							plugins: {
+								rtmp: {'netConnectionUrl':'rtmp://75.101.141.18/elive'},
+							}
+						});
+			</script>
+		<!-- Copy to here -->
+		</body>
